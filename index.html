@@ -12,21 +12,26 @@
         font-size: 20px;
         text-transform: capitalize;
       }
-      .container > div {
-        height: 5vh;
+      .container {
         text-align: center;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
       }
       .header {
-        background-color: purple;
+        background-color: rgb(196, 8, 196);
+        grid-column: 1/-1;
       }
       .menu {
         background-color: blueviolet;
+        grid-column: 1 / span 2;
       }
       .content {
         background-color: coral;
+        grid-column: 3/-1;
       }
       .footer {
         background-color: green;
+        grid-column: 1/-1;
       }
     </style>
   </head>
