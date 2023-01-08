@@ -21,13 +21,13 @@
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 50px 1fr 50px;
         grid-template-areas:
-          "h h h h h h h h h h h h"
+          "m m m  h h h h h h h h h" /* 3 m denotes 3columns contains main section 9h denoted 9 columns contain header section*/
           "m m m c c c c c c c c c"
-          "f f f f f f f f f f f f";
+          "f f f f f f f f f f f f"; /* 12f denotes 12 columns contains footer section */
       }
       .header {
         background-color: rgb(196, 8, 196);
-        grid-area: h;
+        grid-area: h; /* denoting header as h */
       }
       .menu {
         background-color: blueviolet;
