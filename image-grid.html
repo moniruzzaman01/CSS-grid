@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./image-grid.css" />
+    <title>Document</title>
+    <style>
+      body > div {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+      .six {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="one">ONE</div>
+      <div class="two">TWO</div>
+      <div class="three">THREE</div>
+      <div class="four">FOUR</div>
+      <div class="five">FIVE</div>
+      <div class="six">
+        <div>SIX</div>
+        <div>SIX</div>
+        <div>SIX</div>
+        <div>SIX</div>
+      </div>
+      <div class="seven">SEVEN</div>
+      <div class="eight">EIGHT</div>
+    </div>
+  </body>
+</html>
