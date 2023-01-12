@@ -4,36 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./image-grid.css" />
     <title>Document</title>
     <style>
-      body > div {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      img {
+        width: 100%;
+        height: 100%;
       }
-      .six {
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 400px; /*এটা গ্রিডের রো-গুলোর হাইট ফিক্স করার জন্য। এখানে নর্মাল হাইট দিলে কাজ হবে না। */
+      }
+      .container div {
+        margin: 0;
+        padding: 0;
+      }
+      .another-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        height: 100%;
-        padding: 0;
+        grid-auto-rows: 200px;
       }
     </style>
   </head>
   <body>
-    <div>
-      <div class="one">ONE</div>
-      <div class="two">TWO</div>
-      <div class="three">THREE</div>
-      <div class="four">FOUR</div>
-      <div class="five">FIVE</div>
-      <div class="six">
-        <div>SIX</div>
-        <div>SIX</div>
-        <div>SIX</div>
-        <div>SIX</div>
+    <div class="container">
+      <div><img src="./images/one.jpeg" alt="" /></div>
+      <div><img src="./images/two.jpeg" alt="" /></div>
+      <div><img src="./images/three.jpeg" alt="" /></div>
+      <div><img src="./images/four.jpeg" alt="" /></div>
+      <div class="another-container">
+        <div><img src="./images/one.jpeg" alt="" /></div>
+        <div><img src="./images/one.jpeg" alt="" /></div>
+        <div><img src="./images/one.jpeg" alt="" /></div>
+        <div><img src="./images/one.jpeg" alt="" /></div>
       </div>
-      <div class="seven">SEVEN</div>
-      <div class="eight">EIGHT</div>
+      <div><img src="./images/five.jpeg" alt="" /></div>
     </div>
   </body>
 </html>
